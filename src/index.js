@@ -1,10 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
-import '../node_modules/react-bootstrap-table/css/react-bootstrap-table.css'
-import './index.css';
- 
-class Clock extends React.Component{
+import React from 'react'
+import ReactDOM from 'react-dom'
+import UsersTable from './usersTable'
+// import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
+// import '../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
+import './index.css'
+
+/* class Clock extends React.Component{
     constructor(props){
         super(props)
         this.state = {date:new Date(), counter:0};
@@ -45,7 +46,6 @@ class FormattedDate extends React.Component {
     }
   }
 
-
 const columns = [{
     dataField: 'id',
     text: 'Product ID'
@@ -78,20 +78,17 @@ const columns = [{
       );
     }
   }
+ */
 
-  function App() {
-    return (
-      <div>
-        <Clock />
-        <Table />        
-      </div>
-    );
-  }
-  
-    ReactDOM.render(
-      <App />,
-      document.getElementById('root')
-    );
-  
+function App () {
+  return (
+    <div>
+      <UsersTable />
+    </div>
+  )
+}
 
-  
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+)
